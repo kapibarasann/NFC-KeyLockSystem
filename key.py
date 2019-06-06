@@ -44,6 +44,7 @@ def key_move(current_state):
 		print "Locked\n"
 		time.sleep(0.8)
 		led(R)
+		time.sleep(1)
 		Servo(0, 0) #free up Servo
 
 	elif current_state == Lock:
@@ -52,6 +53,7 @@ def key_move(current_state):
 		print "Unlocked\n"
 		time.sleep(0.8)
 		led(B)
+		time.sleep(1)
 		Servo(0, 0) #free up Servo
 
 	return next_state
